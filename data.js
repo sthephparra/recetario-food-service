@@ -60,6 +60,31 @@ const RECETAS = [
     notas: "La hidratación es alta (70 %): usar las manos húmedas."
   },
   {
+    id: "bagels-nueva-york", cat: "panaderia", sub: null,
+    titulo: "Bagels estilo Nueva York", porciones: "8 bagels", tiempo: "Aprox. 2 h 30 min",
+    ingredientes: [
+      "7 g (2 1/4 cdta) de levadura seca activa",
+      "1 cda de miel",
+      "560 ml (2 1/4 tazas) de agua tibia (38–43 °C / 100–110 °F)",
+      "5 tazas de harina de fuerza (de pan)",
+      "2 cda de azúcar morena",
+      "3 cdta de sal",
+      "Para cubrir: mezcla “everything bagel”, semillas de sésamo y queso cheddar rallado",
+      "Baño de huevo (huevo batido) para pincelar",
+      "Agua de cocción: 1 olla de agua, 3 cda de azúcar morena y 1 cdta de bicarbonato de sodio"
+    ],
+    pasos: [
+      "Activar la levadura: en un bowl mezclar el agua tibia, la miel y la levadura. Reposar 10 minutos hasta que haga burbujas.",
+      "Hacer la masa: en otro bowl mezclar la harina, el azúcar y la sal. Agregar la mezcla de levadura y amasar 10–15 minutos hasta que quede suave (con batidora de pie si se tiene). Si está pegajosa, añadir harina poco a poco, pero dejarla ligeramente pegajosa para que los bagels no queden duros.",
+      "Dividir la masa en 8 bolas. Colocarlas sobre una superficie enharinada, cubrir con un paño húmedo y reposar 15 minutos.",
+      "Formar los bagels: con las manos aceitadas, presionar un agujero en el centro de cada bola y girar la masa con un movimiento circular para ensancharlo. Cubrir de nuevo con el paño húmedo y reposar 30 minutos.",
+      "Cocer los bagels: precalentar el horno a 220 °C (425 °F). Llevar a ebullición una olla grande con agua, el azúcar morena y el bicarbonato. Hervir cada bagel 1 minuto por cada lado.",
+      "Preparar para hornear: forrar una bandeja con papel manteca. Espolvorear la mezcla “everything” sobre el papel, colocar los bagels hervidos y pincelar con el baño de huevo. Cubrir con la mezcla “everything”, el sésamo y el cheddar rallado.",
+      "Hornear 25–30 minutos hasta que estén dorados. Dejar enfriar 10 minutos sobre la bandeja y luego pasar a una rejilla hasta que enfríen por completo."
+    ],
+    notas: "Las conversiones a °C son aproximadas. La receta original no indica el peso de la harina en gramos (5 tazas) ni cuántos huevos usar para el baño: ajusta y anótalo cuando la pruebes. El tiempo total es una estimación sumando reposos, cocción y horneado."
+  },
+  {
     id: "keto-pan-nube", cat: "dieta", sub: "keto",
     titulo: "Pan nube keto", porciones: "6 unidades", tiempo: "35 min",
     ingredientes: ["3 huevos (claras y yemas separadas)", "100 g queso crema", "1/4 cdta cremor tártaro", "1 pizca de sal"],
