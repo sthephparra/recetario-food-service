@@ -74,6 +74,13 @@ const RECETAS = [
     notas: "Servir con un hilo de aceite y pimentón."
   },
   {
+    id: "pan-arroz-licuadora", cat: "dieta", sub: "sin-gluten",
+    titulo: "Pan de arroz en licuadora", porciones: "1 pan", tiempo: "Reposo hasta duplicar + horneado",
+    ingredientes: ["380 g de arroz blanco (largo fino, el clásico)", "250 ml de agua tibia (no caliente, apenas tibia)", "60 ml de aceite de oliva", "1 cucharada de miel", "1 cucharada grande de sal", "5 g de levadura seca o 15 g de levadura fresca"],
+    pasos: ["Colocar el arroz blanco en la licuadora junto con el agua tibia y licuar hasta obtener una mezcla homogénea.", "Añadir el aceite de oliva, la miel, la sal y la levadura. Volver a licuar hasta que todo quede bien integrado.", "La masa queda líquida y fácil de manejar: verterla en un molde para pan o en una bandeja apta para horno.", "Dejar reposar hasta que la masa duplique su volumen.", "Hornear hasta que el pan esté dorado y firme."],
+    notas: "Sin gluten y sin amasado. La receta original no indica temperatura ni tiempo de horno: anótalos aquí cuando los pruebes."
+  },
+  {
     id: "alta-proteina-bowl", cat: "dieta", sub: "alta-proteina",
     titulo: "Bowl de pollo y quinoa", porciones: "2 porciones", tiempo: "30 min",
     ingredientes: ["300 g pechuga de pollo", "1 taza quinoa cocida", "1 aguacate", "1 taza espinaca", "Limón, sal, pimienta, páprika"],
