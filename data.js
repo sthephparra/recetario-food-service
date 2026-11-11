@@ -61,28 +61,33 @@ const RECETAS = [
   },
   {
     id: "bagels-nueva-york", cat: "panaderia", sub: null,
-    titulo: "Bagels estilo Nueva York", porciones: "8 bagels", tiempo: "Aprox. 2 h 30 min",
+    titulo: "Bagels estilo Nueva York (receta oficial)", porciones: "26–28 bagels (125–130 g c/u)", tiempo: "Aprox. 2 h 30 min + hornadas",
     ingredientes: [
-      "7 g (2 1/4 cdta) de levadura seca activa",
-      "1 cda de miel",
-      "560 ml (2 1/4 tazas) de agua tibia (38–43 °C / 100–110 °F)",
-      "5 tazas de harina de fuerza (de pan)",
-      "2 cda de azúcar morena",
-      "3 cdta de sal",
-      "Para cubrir: mezcla “everything bagel”, semillas de sésamo y queso cheddar rallado",
-      "Baño de huevo (huevo batido) para pincelar",
-      "Agua de cocción: 1 olla de agua, 3 cda de azúcar morena y 1 cdta de bicarbonato de sodio"
+      "MASA (para 2 kg de harina):",
+      "Harina de fuerza: 2000 g",
+      "Agua tibia (38–43 °C): 1490 g",
+      "Levadura seca activa: 18.5 g",
+      "Miel: 53 g",
+      "Azúcar rubia / morena: 53 g",
+      "Sal: 32 g",
+      "AGUA DE HERVIDO:",
+      "Agua: la necesaria para llenar una olla grande",
+      "Azúcar rubia / morena: 45 g",
+      "Bicarbonato de sodio: 6 g",
+      "PARA DECORAR Y DORAR:",
+      "Huevo batido (para pincelar)",
+      "Toppings al gusto: sazonador Everything Bagel, semillas de ajonjolí (sésamo), queso cheddar rallado"
     ],
     pasos: [
-      "Activar la levadura: en un bowl mezclar el agua tibia, la miel y la levadura. Reposar 10 minutos hasta que haga burbujas.",
-      "Hacer la masa: en otro bowl mezclar la harina, el azúcar y la sal. Agregar la mezcla de levadura y amasar 10–15 minutos hasta que quede suave (con batidora de pie si se tiene). Si está pegajosa, añadir harina poco a poco, pero dejarla ligeramente pegajosa para que los bagels no queden duros.",
-      "Dividir la masa en 8 bolas. Colocarlas sobre una superficie enharinada, cubrir con un paño húmedo y reposar 15 minutos.",
-      "Formar los bagels: con las manos aceitadas, presionar un agujero en el centro de cada bola y girar la masa con un movimiento circular para ensancharlo. Cubrir de nuevo con el paño húmedo y reposar 30 minutos.",
-      "Cocer los bagels: precalentar el horno a 220 °C (425 °F). Llevar a ebullición una olla grande con agua, el azúcar morena y el bicarbonato. Hervir cada bagel 1 minuto por cada lado.",
-      "Preparar para hornear: forrar una bandeja con papel manteca. Espolvorear la mezcla “everything” sobre el papel, colocar los bagels hervidos y pincelar con el baño de huevo. Cubrir con la mezcla “everything”, el sésamo y el cheddar rallado.",
-      "Hornear 25–30 minutos hasta que estén dorados. Dejar enfriar 10 minutos sobre la bandeja y luego pasar a una rejilla hasta que enfríen por completo."
+      "Activar la levadura: en un contenedor pesar y mezclar el agua tibia (1490 g), la miel (53 g) y la levadura seca (18.5 g). Reposar 10 minutos hasta que forme espumita en la superficie.",
+      "Preparar la masa: en el tazón de la batidora o amasadora pesar e integrar la harina de fuerza (2000 g), el azúcar rubia (53 g) y la sal (32 g). Verter la mezcla de levadura y amasar de 10 a 15 minutos a velocidad media hasta obtener una masa elástica y lisa. Si está excesivamente pegajosa, añadir pequeñas pizcas de harina, pero mantenerla suave para que el bagel no quede denso.",
+      "Dividir y primer reposo: pesar la masa y dividirla en porciones iguales de 125 a 130 g (salen entre 26 y 28 bollos). Formar bolitas, colocarlas sobre una mesa ligeramente enharinada, cubrir con un paño húmedo y reposar 15 minutos.",
+      "Formar los bagels: con las manos ligeramente engrasadas con aceite, presionar con el pulgar el centro de cada bola para hacer un agujero y girarla suavemente en círculos para ensancharlo. Colocar las roscas en la mesa, cubrir de nuevo con el paño húmedo y dejar leudar 30 minutos.",
+      "Hervir: precalentar el horno a 220 °C (425 °F). En una olla grande con abundante agua hirviendo, añadir los 45 g de azúcar rubia y los 6 g de bicarbonato. Hervir los bagels por tandas, 1 minuto por lado.",
+      "Montaje y decoración: retirar los bagels con una espumadera y colocarlos en bandejas cubiertas con papel manteca / vegetal. Pincelar con el huevo batido y agregar generosamente los toppings (ajonjolí, sazonador everything bagel o queso cheddar rallado).",
+      "Hornear a 220 °C durante 25 a 30 minutos hasta que tengan un color dorado intenso. Dejar enfriar en la bandeja 10 minutos y luego pasar a una rejilla metálica hasta que enfríen por completo."
     ],
-    notas: "Las conversiones a °C son aproximadas. La receta original no indica el peso de la harina en gramos (5 tazas) ni cuántos huevos usar para el baño: ajusta y anótalo cuando la pruebes. El tiempo total es una estimación sumando reposos, cocción y horneado."
+    notas: "Receta base para 2 kg de harina. Todas las cantidades se pesan en gramos."
   },
   {
     id: "keto-pan-nube", cat: "dieta", sub: "keto",
