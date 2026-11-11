@@ -47,7 +47,7 @@ function recetaCard(r) {
   const sn = r.sub ? " · " + subName(cat, r.sub) : "";
   return `<a class="card" href="#/receta/${r.id}">
     <div class="ico">${cat.icono}</div><h3>${esc(r.titulo)}</h3>
-    <p>${esc(r.tiempo)} · ${esc(fmtRinde(r, 1))}</p><span class="badge">${esc(cat.nombre + sn)}</span></a>`;
+    <p>${[r.tiempo, r.rinde && fmtRinde(r, 1)].filter(Boolean).map(esc).join(" · ") || "&nbsp;"}</p><span class="badge">${esc(cat.nombre + sn)}</span></a>`;
 }
 
 function renderNav(activeCat) {
@@ -85,7 +85,7 @@ function vistaReceta(id) {
   const base = baseTotal(r) / 1000, bu = baseUnidad(r);
   $app.innerHTML = `<div class="crumbs"><a href="#/${cat.id}">${cat.nombre}</a>${sn}</div>
     <article class="receta"><h1>${esc(r.titulo)}</h1>
-    <div class="meta"><span>⏱ ${esc(r.tiempo)}</span><span>🍽 Rinde: <b id="rinde"></b></span></div>
+    <div class="meta">${r.tiempo ? `<span>⏱ ${esc(r.tiempo)}</span>` : ""}${r.rinde ? `<span>🍽 Rinde: <b id="rinde"></b></span>` : ""}${r.video ? `<a href="${esc(r.video)}" target="_blank" rel="noopener">▶ Ver video de referencia</a>` : ""}</div>
 
     <div class="calc">
       <label for="kilos">⚖️ Calcular para</label>
@@ -96,7 +96,7 @@ function vistaReceta(id) {
     </div>
 
     <h2>Ingredientes</h2><ul id="ings" class="ings"></ul>
-    <h2>Preparación</h2><ol>${r.pasos.map(p => `<li>${esc(p)}</li>`).join("")}</ol>
+    <h2>Preparación</h2>${r.pasos.length ? `<ol>${r.pasos.map(p => `<li>${esc(p)}</li>`).join("")}</ol>` : `<p class="vacio">Preparación pendiente de agregar.</p>`}
     ${r.notas ? `<div class="nota">💡 ${esc(r.notas)}</div>` : ""}
     <button class="print" onclick="window.print()">🖨 Imprimir</button></article>`;
 
@@ -105,7 +105,7 @@ function vistaReceta(id) {
     const v = parseFloat($k.value.replace(",", "."));
     const f = v > 0 ? (v * 1000) / baseTotal(r) : 1;
     document.getElementById("ings").innerHTML = htmlIngredientes(r, f);
-    document.getElementById("rinde").textContent = fmtRinde(r, f);
+    if (r.rinde) document.getElementById("rinde").textContent = fmtRinde(r, f);
     document.getElementById("factor").textContent = f === 1 ? "" : `Receta × ${num(f, 3)}`;
   };
   $k.addEventListener("input", pintar);

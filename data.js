@@ -70,6 +70,24 @@ const RECETAS = [
     notas: "Receta escrita para 2 kg de harina. Todas las cantidades se pesan en gramos."
   },
   {
+    id: "pan-estilo-subway", cat: "dieta", sub: null,
+    titulo: "Pan estilo Subway",
+    baseNombre: "harina de trigo",
+    video: "https://www.tiktok.com/@barbaralcooks/video/7649170223261666568?lang=es",
+    ingredientes: [
+      { n: "Harina de trigo", q: 600, u: "g", h: true },
+      { n: "Aceite", q: 90, u: "ml" },
+      { n: "Leche líquida", q: 350, u: "ml" },
+      { n: "Azúcar", q: 30, u: "g" },
+      { n: "Sal", q: 10, u: "g" },
+      { n: "Levadura instantánea", q: 9, u: "g" },
+      { n: "Queso parmesano", txt: "al gusto" },
+      { n: "Orégano seco", txt: "al gusto" }
+    ],
+    pasos: [],
+    notas: "Faltan por agregar la preparación, los tiempos y la temperatura de horno, como el rendimiento. El video de referencia está enlazado arriba."
+  },
+  {
     id: "pan-arroz-licuadora", cat: "dieta", sub: "sin-gluten",
     titulo: "Pan de arroz en licuadora", tiempo: "Reposo hasta duplicar + horneado",
     baseNombre: "arroz", rinde: { q: 1, u: "pan" },
