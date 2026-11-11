@@ -70,6 +70,22 @@ const RECETAS = [
     notas: "Receta escrita para 2 kg de harina. Todas las cantidades se pesan en gramos."
   },
   {
+    id: "pebete-casero", cat: "panaderia", sub: null,
+    titulo: "Pebete casero",
+    baseNombre: "harina 000",
+    ingredientes: [
+      { n: "Harina 000", q: 1000, u: "g", h: true },
+      { n: "Levadura fresca", q: 30, u: "g" },
+      { n: "Azúcar", q: 80, u: "g" },
+      { n: "Sal", q: 20, u: "g" },
+      { n: "Leche", q: 540, u: "ml" },
+      { n: "Miel", q: 20, u: "g" },
+      { n: "Manteca", q: 80, u: "g" }
+    ],
+    pasos: [],
+    notas: "En lugar de 30 g de levadura fresca se pueden usar 10 g de levadura seca (un tercio). Faltan por agregar la preparación, los tiempos, la temperatura de horno y el rendimiento."
+  },
+  {
     id: "pan-estilo-subway", cat: "dieta", sub: null,
     titulo: "Pan estilo Subway",
     baseNombre: "harina de trigo",
